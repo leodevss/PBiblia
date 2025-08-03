@@ -15,8 +15,7 @@ export default function Banner() {
                     Leia a Bíblia agora e descubra como! Ou se preferir, tire suas dúvidas bíblicas agora mesmo!
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <Link
-                        to="/ler-biblia"
+                    <Link to={"/biblia/livros"}
                         className="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 w-full sm:w-auto"
                     >
                         Ler a Bíblia
