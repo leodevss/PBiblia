@@ -8,13 +8,12 @@ export default function Header() {
         <header className="bg-gray-600 text-white shadow-lg sticky top-0 z-50">
             <div className="container mx-auto flex items-center justify-between p-4">
                 {/* Logo */}
-                <div className="text-2xl font-bold">
-                    <Link to="/" className="hover:text-amber-400 transition-colors duration-300">
+                <div className="text-2xl font-bold text-center">
+                    <Link to="/" className="hover:text-amber-400 transition-colors duration-300 text-center">
                         Biblia
                     </Link>
                 </div>
 
-                {/* Navegação para Desktop */}
                 <nav className="hidden md:flex items-center space-x-6">
                     <Link to="/ler-biblia" className="py-2 px-4 hover:bg-gray-700 rounded-md transition-colors duration-300 ">
                         Ler a Bíblia
@@ -27,7 +26,6 @@ export default function Header() {
                     </Link>
                 </nav>
 
-                {/* Botão do Menu Móvel */}
                 <div className="md:hidden">
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
